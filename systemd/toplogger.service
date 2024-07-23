@@ -1,0 +1,10 @@
+[Unit]
+Description=Custom web server to track system resource usage
+
+[Service]
+ExecStart=/home/fmuyassarov/top/topServer.sh
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
+Alias=toplogger.service
